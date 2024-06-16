@@ -1,0 +1,124 @@
+body {
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+}
+
+.intro-text .allura {
+    font-family: 'Allura', cursive;
+    font-size: 8vw;
+}
+
+h1 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 0.5em 0;
+    font-weight: 500;
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    padding-right: 0.5vw;
+    font-size: 1vw;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1em 0;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+a {
+    color: #575757;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* specific to about.html */
+
+.about-container {
+    width: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1; 
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.text-container p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* specific to contact.html */
+.contact-container {
+    width: 25%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    align-items: center;
+    text-align: left;
+}
