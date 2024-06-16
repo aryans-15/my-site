@@ -24,12 +24,8 @@ body {
     font-size: 8vw;
 }
 
-h1 {
-    margin: 1em 0;
-}
-
 p {
-    margin: 0.5em 0;
+    margin: 0.5vw 0;
     font-weight: 500;
 }
 
@@ -52,12 +48,12 @@ p {
 
 .navbar a {
     padding-right: 0.5vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 footer {
     margin-top: auto;
-    padding: 1em 0;
+    padding: 1vw 0;
     font-weight: 400;
     font-size: 1vw;
 }
@@ -90,13 +86,13 @@ a:hover {
 .image-container {
     flex: 1; 
     max-width: 30%;
-    margin-right: 20px;
+    margin-right: 1vw;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 .text-container {
@@ -105,7 +101,6 @@ a:hover {
 }
 
 .text-container p {
-    margin: 10px 0;
     font-weight: 500;
 }
 
