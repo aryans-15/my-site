@@ -10,12 +10,11 @@ body {
     padding: 0;
 }
 
+p {
+    font-size: 1vw;
+}
+
 .intro-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     font-size: 6vw;
 }
 
@@ -30,7 +29,7 @@ p {
 }
 
 .highlight {
-    color: blueviolet;
+    color: #007c70;
 }
 
 .navbar {
@@ -59,26 +58,17 @@ footer {
 }
 
 a {
-    color: #575757;
+    color: blueviolet;
     text-decoration: none;
 }
 
 a:hover {
-    color: #333;
+    color: blue;
     text-decoration: underline;
 }
 
-/* specific to about.html */
-
 .about-container {
-    width: 50%;
     box-sizing: border-box;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 1vw;
     display: flex;
     align-items: center;
 }
@@ -104,7 +94,6 @@ a:hover {
     font-weight: 500;
 }
 
-/* specific to contact.html */
 .contact-container {
     width: 25%;
     box-sizing: border-box;
@@ -113,7 +102,18 @@ a:hover {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 1vw;
     align-items: center;
     text-align: left;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.most-recent-song {
+    margin: 1vw;
 }
