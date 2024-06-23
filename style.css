@@ -10,6 +10,11 @@ body {
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
 p {
     font-size: 1vw;
 }
@@ -30,6 +35,10 @@ p {
 
 .highlight {
     color: #007c70;
+}
+
+.highlight.dark-mode {
+    color: lightcoral;
 }
 
 .navbar {
@@ -62,9 +71,17 @@ a {
     text-decoration: none;
 }
 
+a.dark-mode {
+    color: rgb(137, 205, 228);
+}
+
 a:hover {
     color: blue;
     text-decoration: underline;
+}
+
+a.dark-mode:hover {
+    color: rgb(111, 151, 165);
 }
 
 .about-container {
@@ -112,8 +129,4 @@ a:hover {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.most-recent-song {
-    margin: 1vw;
 }
