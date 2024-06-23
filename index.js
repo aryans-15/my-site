@@ -1,7 +1,3 @@
-function isMobile() {
-    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-}
-
 function lightFog() {
     VANTA.FOG({
         el: 'body',
@@ -35,10 +31,10 @@ function darkFog() {
 const setTheme = (theme) => {
     const footer = document.getElementById("footer");
     if (theme === "dark-mode") {
-        footer.innerHTML = '<i>last updated 06/22/2024</i> &nbsp; &nbsp; <a href="#" id="dark-mode-toggle" class="dark-mode"><i class="fa-solid fa-sun"></i> light mode</a>';
+        footer.innerHTML = '<i>last updated 06/23/2024</i> &nbsp; &nbsp; <a href="#" id="dark-mode-toggle" class="dark-mode"><i class="fa-solid fa-sun"></i> light mode</a>';
         darkFog();
     } else {
-        footer.innerHTML = '<i>last updated 06/22/2024</i> &nbsp; &nbsp; <a href="#" id="dark-mode-toggle" class="light-mode"><i class="fa-solid fa-moon"></i> dark mode</a>';
+        footer.innerHTML = '<i>last updated 06/23/2024</i> &nbsp; &nbsp; <a href="#" id="dark-mode-toggle" class="light-mode"><i class="fa-solid fa-moon"></i> dark mode</a>';
         lightFog();
     }
     
@@ -59,9 +55,7 @@ const setTheme = (theme) => {
         try {
             element.classList.remove('light-mode', 'dark-mode');
             if (theme === "dark-mode") element.classList.add(theme);
-        } catch {
-            // console.log("Skipping " + element);
-        }
+        } catch {}
     });
     localStorage.setItem('theme', theme);
 };
@@ -75,10 +69,6 @@ const toggleTheme = (event) => {
 };
 
 window.onload = function() {
-    if (isMobile()) {
-        alert('This website was not designed for phone. Please use a laptop for the best experience.');
-    }
-
     let currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
         setTheme(currentTheme);
